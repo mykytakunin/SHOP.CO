@@ -1,0 +1,506 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: "Satoshi-Regular";
+  font-size: 16px;
+  color: #000;
+  transition: skro;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+input:hover {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.section-text {
+  color: #616060;
+}
+
+.header {
+  margin: 24px auto;
+}
+.header .header-nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-nav .header-menu {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.header .header-nav .header-menu .shop-list-button {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.header .header-nav .header-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.logo {
+  font-family: "Integral CF";
+  font-size: 32px;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 577px;
+}
+.input-container .search-input {
+  padding: 12px 16px;
+  padding-left: 52px;
+  width: 100%;
+  max-width: 577px;
+  border: none;
+  border-radius: 62px;
+  background-color: #f0f0f0;
+}
+.input-container .search-input::-moz-placeholder {
+  font-family: "Satoshi-Regular";
+}
+.input-container .search-input::placeholder {
+  font-family: "Satoshi-Regular";
+}
+.input-container .input-icon {
+  position: absolute;
+  z-index: 2;
+  top: 8px;
+  left: 16px;
+}
+
+.section-title {
+  font-family: "Integral CF";
+  font-size: 48px;
+  line-height: 100%;
+}
+
+.hero-section {
+  background-color: #f2f0f1;
+}
+.hero-section .section-container {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-section .hero-section-image {
+  max-width: 695px;
+  max-height: 665px;
+}
+.hero-section .section-title {
+  margin-top: 103px;
+  font-size: 64px;
+}
+.hero-section .section-text {
+  margin-top: 32px;
+  max-width: 545px;
+}
+.hero-section .hero-button {
+  margin-top: 32px;
+  padding: 16px 54px;
+}
+.hero-section .numbers-container {
+  position: relative;
+  margin-top: 63px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 64px;
+}
+.hero-section .numbers-container .numbers-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 207px;
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+}
+.hero-section .numbers-container .numbers-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 450px;
+  width: 1px;
+  height: 100%;
+  background-color: #dad8d9;
+}
+.hero-section .numbers-container .number {
+  font-family: "Satoshi-Bold";
+  font-size: 40px;
+  font-weight: 700;
+}
+.hero-section .numbers-container .description {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.button {
+  display: block;
+  padding: 16px 20px;
+  border-radius: 62px;
+  background-color: #000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.view-all {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  color: #000000;
+  margin: 0 auto;
+  padding: 16px 54px;
+  margin-bottom: 80px;
+}
+
+.brand-section {
+  background-color: black;
+}
+.brand-section .section-container {
+  padding: 44px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrivals-section .section-title {
+  text-align: center;
+  margin-top: 72px;
+}
+.arrivals-section .arrivals-card-list {
+  margin-top: 55px;
+  margin-bottom: 36px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+.arrivals-section:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cloth-card .card-title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-family: "Satoshi-Bold";
+  font-size: 20px;
+}
+.cloth-card .prise {
+  font-size: 24px;
+  font-family: "Satoshi-Bold";
+}
+
+.cloth-card.invisible {
+  display: none;
+}
+
+.feedback-container {
+  display: flex;
+  gap: 13px;
+  margin-bottom: 8px;
+}
+.feedback-container .rating_grey {
+  color: #666666;
+}
+
+.top-selling-section .section-title {
+  text-align: center;
+  margin-top: 160px;
+}
+.top-selling-section .arrivals-card-list {
+  margin-top: 55px;
+  margin-bottom: 36px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+}
+
+.browse-section {
+  margin-bottom: 80px;
+}
+.browse-section .section-container {
+  background-color: #f0f0f0;
+  border-radius: 40px;
+  padding: 70px 64px;
+}
+.browse-section .section-container .section-title {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.browse-section .section-container .style-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+}
+.browse-section .section-container .card-image {
+  border-radius: 20px;
+}
+
+.shop-list {
+  position: relative;
+}
+
+.shop-items {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  top: 20px;
+  left: -20px;
+  background-color: white;
+  padding: 10px 19px;
+  border-radius: 10px;
+  font-size: 15px;
+  height: 130px;
+  transition: height 0.3s ease;
+}
+
+.shop-item {
+  transition: all 0.3s ease;
+  color: gray;
+}
+
+.shop-items.hidden {
+  height: 0;
+  overflow: hidden;
+}
+
+.shop-item.hidden {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.customers-list {
+  display: grid;
+  margin-top: 40px;
+  margin-bottom: 170px;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.title-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.carousel-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.customers-section {
+  position: relative;
+}
+
+.customer-card {
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 28px 32px;
+  max-width: 400px;
+  width: 100%;
+}
+.customer-card .card-title {
+  display: flex;
+  gap: 4px;
+}
+.customer-card .card-title .text {
+  font-size: 20px;
+  font-family: "Satoshi-Bold";
+}
+.customer-card .card-text {
+  max-width: 336px;
+  margin-top: 12px;
+  color: #666666;
+}
+
+.footer {
+  background-color: #f0f0f0;
+}
+
+.footer-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  padding-top: 140px;
+}
+
+.footer-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+  top: 367px;
+  left: 0;
+}
+
+.footer-text {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  max-width: 248px;
+  width: 100%;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-item .title {
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+.footer-item .item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+}
+.footer-item .item-list .item-list {
+  color: #606060;
+}
+
+.rights-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 80px;
+}
+
+.rights-text {
+  font-size: 14px;
+  color: #606060;
+}
+
+.reg-window {
+  color: white;
+  display: flex;
+  padding: 9px 100px;
+  justify-content: flex-end;
+  gap: 425px;
+}
+
+.reg-window-container {
+  background-color: black;
+}
+
+.reg-text {
+  font-size: 14px;
+}
+.reg-text .undlerline {
+  text-decoration: underline;
+  font-family: "Satoshi-Medium";
+}
+
+.reg-window-container.isHidden {
+  display: none;
+}
+
+.regButton {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe-window-container {
+  position: absolute;
+  z-index: 1000;
+  top: 390px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  padding: 36px 64px;
+  background-color: black;
+  border-radius: 20px;
+  justify-content: space-between;
+  max-width: 1240px;
+  width: 100%;
+}
+.subscribe-window-container .section-title {
+  font-size: 40px;
+  color: white;
+  max-width: 551px;
+}
+.subscribe-window-container .email-input {
+  padding: 12px 16px;
+  padding-left: 52px;
+  border-radius: 62px;
+  width: 349px;
+  border: none;
+}
+.subscribe-window-container .button {
+  padding: 12px 16px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  margin-top: 14px;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
